@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Metronic Pro';
+    src: local('Metronic Pro Light'), local('Metronic-Pro-Light'),
+        url('MetronicPro-Light.woff2') format('woff2'),
+        url('MetronicPro-Light.woff') format('woff'),
+        url('MetronicPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

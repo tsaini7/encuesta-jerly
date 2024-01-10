@@ -1,0 +1,18 @@
+body {
+  font-family: "Metronic Pro", sans-serif;
+  background-color: #fff;
+  color: #263c5b;
+}
+
+.conteiner {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 300px;
+}

@@ -1,0 +1,103 @@
+@media (max-width: 720px) {
+
+    
+    .main {
+        margin: 0 20px;
+    }
+    
+    .logo {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        width: 250px;
+    }
+    
+    .bienvenida {
+        margin: 3rem 0 3rem 0;
+    }
+    
+    .selectores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto
+    
+    }
+    
+    .selector {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0.4rem 0;
+        align-items: center;
+
+    
+    }
+    
+    .selector label {
+        width: 70%;
+        text-align: center;
+    }
+    
+    .selector select  {
+        width: 60%;
+        font-family: 'Metronic Pro';
+        color: black;
+        padding: 5px;
+    }
+    
+    .selector input {
+        width: 50%;
+        font-family: 'Metronic Pro';
+        color: black;
+    }
+    
+    .p-referencia {
+        margin-top: 3rem;
+    }
+    .referencia {
+        margin-top: 1rem;
+        width: 100%;
+        height: 6rem;
+    }
+    
+    .botonera {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem auto;
+    }
+    
+    button {
+        background-color: #263C5B;
+        color: #fff;
+        border: none;
+        font-family: 'Metronic Pro';
+        font-weight: bold;
+        padding: 0.5rem 0 0.5rem 0;
+        width: 200px;
+        cursor: pointer;
+    }
+    
+  }
+
+  @media (min-width: 720px) and (max-width:1024px) {
+
+    .selector {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0.4rem 0;
+        align-items: center;
+
+    
+    }
+    .selector label {
+        width: 100%;
+        text-align: center;
+    }
+  }

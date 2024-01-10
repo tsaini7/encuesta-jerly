@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/e3f201520edfd80036162ca6e0d00852?family=MetronicProBold" rel="stylesheet">
+    <link href = "./assets-encuesta/fonts/bold/style.css" rel = "stylesheet" type = "text/css"/>
+    <link href = "./assets-encuesta/fonts/prolight/style.css" rel = "stylesheet" type = "text/css"/>
+    <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
+    <link rel="stylesheet" href="assets-encuesta/estilos.css">
+    <link rel="stylesheet" href="assets-encuesta/media.css">
+
+    <title>Encuesta de Satisfacción</title>
+</head>
+<body>
+    <header class="cabecera"></header> 
+    <div class="main">
+        
+        <div class="logo">
+            <img src="./assets-encuesta/img/horizontal-fondoblanco_Alta.jpg" alt="imagen logo jerly">
+        </div>
+        
+        <p class="bienvenida">Estimado cliente,<br> 
+            Muchas gracias por elegirnos y confiar su seguridad en nuestros servicios. Le acercamos la 
+            siguiente encuesta, la cual agradecemos sea respondida, ya que su opinión es muy valiosa para 
+            nuestra búsqueda de la excelencia y mejora continua</p>
+        
+        <form action="enviar_encuesta.php" method="POST">
+            <div class="selectores">
+                <div class="selector">
+                    <label class="nombre-empresa" for="empresa">Nombre / Empresa </label>
+                    <input type="text" name="empresa" required>
+                </div>
+                <div class="selector">
+                    <label for="solucion-de-problemas">Solucion de problemas</label>
+                    <select name="solucion-de-problemas" id="solucion-de-problemas" required>
+                        <option></option>
+                        <option>Muy bueno</option>
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                        <option>No aplica</option>
+                    </select>
+                </div>
+
+                <div class="selector">
+                    <label for="presentacion-del-personal">Presentación del personal</label>
+                    <select name="presentacion-del-personal" id="presentacion-del-personal" required>
+                        <option></option>
+                        <option>Muy bueno</option>
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                        <option>No aplica</option>
+                    </select>
+                </div>
+
+                <div class="selector">
+                    <label for="desempeño-del-personal">Desempeño del personal</label>
+                    <select name="desempeño-del-personal" id="desempeño-del-personal" required>
+                        <option></option>
+                        <option>Muy bueno</option>
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                        <option>No aplica</option>
+                    </select>
+                </div>
+
+                <div class="selector">
+                    <label for="calidad-de-servicio">Calidad de nuestro servicio</label>
+                    <select name="calidad-de-servicio" id="calidad-de-servicio" required>
+                        <option></option>
+                        <option>Muy bueno</option>
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                        <option>No aplica</option>
+                    </select>
+                </div>
+
+                <div class="selector">
+                    <label for="rapidez-de-respuesta">Rapidez de respuesta</label>
+                    <select name="rapidez-de-respuesta" id="rapidez-de-respuesta"required>
+                        <option></option>
+                        <option>Muy bueno</option>
+                        <option>Bueno</option>
+                        <option>Regular</option>
+                        <option>Malo</option>
+                        <option>No aplica</option>
+                    </select>
+                </div>
+            </div>
+        
+
+        <p class="p-referencia">Por último, le pedimos una breve referencia sobre nosotros:</p>
+        <textarea class="referencia" name="referencia" id="referencia" required></textarea>
+
+    </div>
+    
+</div>
+
+<div class="botonera">
+   <button class="envio" type="submit" >ENVIAR ENCUESTA</button>
+</div>
+
+
+</form>
+<footer id="pie">
+    <p>Encuesta creada por Tomás Saini. tomas.saini@msn.com</p>
+</footer>
+<script src="assets-encuesta/js/app.js"></script>
+</body>
+</html>

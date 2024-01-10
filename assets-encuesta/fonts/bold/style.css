@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Metronic Pro';
+    src: local('Metronic Pro Bold'), local('Metronic-Pro-Bold'),
+        url('MetronicPro-Bold.woff2') format('woff2'),
+        url('MetronicPro-Bold.woff') format('woff'),
+        url('MetronicPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
