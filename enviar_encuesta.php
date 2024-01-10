@@ -1,6 +1,10 @@
 <?php
 
-
+// Verifica si todos los campos del formulario están completos
+if (!isset($_POST['nombre']) || !isset($_POST['apellido']) || !isset($_POST['correo']) || !isset($_POST['comentarios'])) {
+    echo 'Por favor, complete todos los campos del formulario.';
+    exit;
+}
 
 if( $SERVER [ 'REQUEST_METHOD'] != 'POST'){
     header('Location: index.html');
@@ -15,7 +19,7 @@ $calidad = $_POST['calidad-de-servicio'];
 $rapidez =  $_POST['rapidez-de-respuesta'];
 $referencia = $_POST['referencia'];
 
-$para = 'soporte@jerlysecurity.com.ar'; 
+$para = 'soporte@jerlysecurity.com.ar, contacto@jerlysecurity.com.ar'; 
 $subject = "Resultado de la encuesta de $empresa";
 
 // Mensaje que se envia al mail
